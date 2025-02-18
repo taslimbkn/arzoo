@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Balance Coach - Relationship & Parenting Guidance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Life Balance Coach</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#booking" class="cta-button">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Relationships & Parenting Journey</h1>
+                <p>Expert guidance for stronger families and happier relationships</p>
+                <a href="#booking" class="cta-button">Schedule a Consultation</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card" onclick="showServiceDetails('relationship')">
+                    <i class="fas fa-heart"></i>
+                    <h3>Relationship Coaching</h3>
+                    <p>Build stronger, healthier relationships through effective communication and understanding.</p>
+                    <span class="service-price">Rs. 499/session</span>
+                    <button class="service-details-btn">Learn More</button>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('parenting')">
+                    <i class="fas fa-child"></i>
+                    <h3>Parenting Support</h3>
+                    <p>Learn practical strategies for positive parenting and family harmony.</p>
+                    <span class="service-price">Rs. 999/session</span>
+                    <button class="service-details-btn">Learn More</button>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('family')">
+                    <i class="fas fa-users"></i>
+                    <h3>Family Counseling</h3>
+                    <p>Address family dynamics and create a more peaceful home environment.</p>
+                    <span class="service-price">Rs. 1499/session</span>
+                    <button class="service-details-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Coach Portrait">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <h3>Sonika Vijay</h3>
+                    <p class="about-title">Certified Relationship & Parenting Coach</p>
+                    <p class="about-description">
+                        With over Five years of experience in family counseling and relationship coaching, 
+                        I'm passionate about helping families build stronger bonds and navigate life's challenges together.
+                    </p>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-certificate"></i>
+                            <p>Certified Family Therapist</p>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-award"></i>
+                            <p>Licensed Relationship Coach</p>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-university"></i>
+                            <p>Masters in Psychology (Running)</p>
+                        </div>
+                    </div>
+                    <a href="#booking" class="cta-button">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <button class="testimonial-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client" class="client-image">
+                            <p class="testimonial-text">"Working with this coach transformed our family dynamics completely. The strategies we learned helped us communicate better and grow closer as a family."</p>
+                            <h4 class="client-name">Sarah Johnson</h4>
+                            <p class="client-role">Parent of Two</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client" class="client-image">
+                            <p class="testimonial-text">"The relationship coaching sessions were eye-opening. We gained valuable insights and tools that helped us build a stronger partnership."</p>
+                            <h4 class="client-name">Michael Chen</h4>
+                            <p class="client-role">Relationship Coaching Client</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Client" class="client-image">
+                            <p class="testimonial-text">"As a single parent, the parenting support I received was invaluable. I now feel more confident in my parenting approach."</p>
+                            <h4 class="client-name">Emma Thompson</h4>
+                            <p class="client-role">Single Parent</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="testimonial-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="testimonial-dots"></div>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2>Book a Session</h2>
+            <div class="booking-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Type</label>
+                        <select id="service" required>
+                            <option value="">Select a service</option>
+                            <option value="relationship">Relationship Coaching</option>
+                            <option value="parenting">Parenting Support</option>
+                            <option value="family">Family Counseling</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Proceed to Payment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@lifebalancecoach.com</p>
+                <p>Phone & UPI : 9352831309@axl</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Life Balance Coach. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
