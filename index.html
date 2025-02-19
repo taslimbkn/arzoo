@@ -68,7 +68,7 @@
                 </div>
                 <div class="about-content">
                     <h2>About Me</h2>
-                    <h3>Sonika Vijay</h3>
+                    <h3>Arzoo</h3>
                     <p class="about-title">Certified Relationship & Parenting Coach</p>
                     <p class="about-description">
                         With over Five years of experience in family counseling and relationship coaching, 
@@ -81,11 +81,11 @@
                         </div>
                         <div class="credential-item">
                             <i class="fas fa-award"></i>
-                            <p>Licensed Relationship Coach</p>
+                            <p>Certified Relationship Coach</p>
                         </div>
                         <div class="credential-item">
                             <i class="fas fa-university"></i>
-                            <p>Masters in Psychology (Running)</p>
+                            <p>Better Understanding of Psychology</p>
                         </div>
                     </div>
                     <a href="#booking" class="cta-button">Book a Consultation</a>
@@ -149,6 +149,18 @@
                         <input type="tel" id="phone" required>
                     </div>
                     <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <p class="gender-notice" style="display: none; color: #e74c3c; margin-top: 0.5rem;">
+                            Sorry, our services are currently available for women only.
+                        </p>
+                    </div>
+                    <div class="form-group">
                         <label for="service">Service Type</label>
                         <select id="service" required>
                             <option value="">Select a service</option>
@@ -164,12 +176,24 @@
                     <div class="form-group">
                         <label for="time">Preferred Time</label>
                         <input type="time" id="time" required>
+                        <p class="time-notice" style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">
+                            Available times:<br>
+                            Weekdays: 7 PM - 10 PM<br>
+                            Weekends: 10 AM - 10 PM
+                        </p>
                     </div>
                     <div class="form-group">
                         <label for="message">Additional Notes</label>
                         <textarea id="message" rows="4"></textarea>
                     </div>
-                    <button type="submit" class="submit-button">Proceed to Payment</button>
+                    <div class="payment-section">
+                        <button type="submit" class="submit-button">Proceed to Payment</button>
+                        <div class="payment-qr">
+                            <img src="C:\Users\Acer\Downloads\sonik\avqr.jpg" alt="PhonePe QR Code" class="qr-code">
+                            <p class="payment-info">Scan QR to pay with PhonePe</p>
+                            <p class="upi-id">UPI ID: 9352831309@axl</p>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
